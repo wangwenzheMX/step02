@@ -1,0 +1,45 @@
+3.30
+    1:上午:重新回顾昨天的知识 行业;linux系统命令;
+yum管理软件包:yum list :列出所有软件包  yum repolist显示总共有多少个软件包 yum  install +包名 安装软件包   yum remove +包名 删除软件包 
+相对应的 rpm命令:查看包是否安装
+	rpm -ql 显示完整包名
+	rpm -qa 显示安装后产生的新的文件
+
+重置虚拟机命令:rht-vmctl reset+机器名   注意必须先打开虚拟机服务端机器classroom才能获得虚拟机ip地址
+链接虚拟机终端使用 ssh root@ip地址
+ 
+
+
+通过终端打开浏览器 直接输入命令firefox  
+如果想要打开虚拟机或对方真机浏览器 命令为:ssh -X root@ip地址(虚拟机和真机)
+
+如果当前链接是虚拟机想要一个真机的终端 ctrl+shift+t
+
+
+
+在github创建本地存储,关联远程仓库
+先要知道钥匙和密码
+设置密码 ssh-keygen -t rsa -C "email" 
+切换目录到.ssh隐藏文件 cd .ssh
+然后查看id_rsa.pub 查看密码cat id_rsa.pub   并复制粘贴到github里面ssh密钥内容
+
+
+
+
+
+
+git status
+#前面先创建一个本地文件 mkdir  mkdir -p a/b  表示创建多级文件
+git add +文件名(添加文件)
+复制github网页上的后面两行命令(注意格式 必须是英文 不能有空格)
+
+
+
+
+
+
+
+
+
+
+
